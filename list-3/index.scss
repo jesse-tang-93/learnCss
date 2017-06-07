@@ -1,0 +1,74 @@
+$uiWidth:640px;
+$text-color:#fff;
+$bg-color:#68cdd5;
+@function pxToRem($px){
+  @return ($px/$uiWidth) / 2 * 1rem;
+}
+html{font-size: $uiWidth}
+body,ul,li,img{
+  margin: 0;
+  padding: 0;
+}
+body{background-color: $bg-color;font-family: "Microsoft YaHei UI"}
+header{height: pxToRem(90px);background-color: $bg-color;padding-left: pxToRem(36px)}
+.back{
+  width: pxToRem(54px);
+  background: url("img/back.png") no-repeat center center;
+  background-size: contain;
+  height: 100%;
+}
+div.logo-box{
+  height: pxToRem(118px);
+  width: pxToRem(192px);
+  text-align: center;
+  margin: pxToRem(40px) auto;
+  img{
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: block;
+  }
+}
+div.text{
+  padding: pxToRem(20px) pxToRem(92px);
+  font-size:pxToRem(16px) ;
+  color: $text-color;
+  letter-spacing: pxToRem(2px);
+  line-height: pxToRem(40px);
+  text-align: justify;
+  margin-top: pxToRem(70px);
+}
+.list-box{
+  margin-top: pxToRem(152px);
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  .child{
+    text-align:center;
+    :first-child{background-color: #3ea7ea}
+    .text-mini{
+      font-size: 14px;
+      display: block;
+      line-height: 1;
+      color: $text-color;
+    }
+
+    div{
+      width: pxToRem(100px);
+      height: pxToRem(100px);
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: pxToRem(20px);
+    }
+    .man{
+      background: url("img/man.png") 0 0 no-repeat;
+      background-size: contain;
+    }
+    .logo-mimi{
+      background: url("img/logo-mini.png")-5px 2px no-repeat;
+      background-size: 95% 95%;
+      background-color: #009e96;
+    }
+  }
+}

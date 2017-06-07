@@ -1,0 +1,72 @@
+html {
+  font-size: 640px; }
+
+body, ul, li, img {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #68cdd5;
+  font-family: "Microsoft YaHei UI"; }
+
+header {
+  height: 0.07031rem;
+  background-color: #68cdd5;
+  padding-left: 0.02813rem; }
+
+.back {
+  width: 0.04219rem;
+  background: url("img/back.png") no-repeat center center;
+  background-size: contain;
+  height: 100%; }
+
+div.logo-box {
+  height: 0.09219rem;
+  width: 0.15rem;
+  text-align: center;
+  margin: 0.03125rem auto; }
+  div.logo-box img {
+    max-width: 100%;
+    vertical-align: middle;
+    margin: 0 auto;
+    display: block; }
+
+div.text {
+  padding: 0.01563rem 0.07187rem;
+  font-size: 0.0125rem;
+  color: #fff;
+  letter-spacing: 0.00156rem;
+  line-height: 0.03125rem;
+  text-align: justify;
+  margin-top: 0.05469rem; }
+
+.list-box {
+  margin-top: 0.11875rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-around; }
+  .list-box .child {
+    text-align: center; }
+    .list-box .child :first-child {
+      background-color: #3ea7ea; }
+    .list-box .child .text-mini {
+      font-size: 14px;
+      display: block;
+      line-height: 1;
+      color: #fff; }
+    .list-box .child div {
+      width: 0.07813rem;
+      height: 0.07813rem;
+      border-radius: 50%;
+      margin: 0 auto;
+      display: block;
+      margin-bottom: 0.01563rem; }
+    .list-box .child .man {
+      background: url("img/man.png") 0 0 no-repeat;
+      background-size: contain; }
+    .list-box .child .logo-mimi {
+      background: url("img/logo-mini.png")-5px 2px no-repeat;
+      background-size: 95% 95%;
+      background-color: #009e96; }
+
+/*# sourceMappingURL=index.css.map */
