@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <title>给父级添加overflow:hideen;消除子浮动影响</title>
+    <style>
+        .container{width:300px;
+            background-color: #68cdd5;
+            overflow: hidden;   /*很简单的方式清除了浮动*/
+            padding: 20px;
+            position: relative;
+            margin: 10px;
+        }
+        .container div{
+            width: 100px;
+            height: 100px;
+            background-color: orange;
+            border:1px solid;
+        }
+        .container div:first-child{
+            float: left;
+            /*position: absolute;*/
+            /*top:0;*/
+            /*left: 0;*/
+        }
+        .container div.child-2{
+            float: right;
+        }
+        .container div.child-3{
+            width: 100px;
+            height:100px;
+            background-color: #9da;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div></div>
+    <div class="child-2"></div>
+    <!--<div class="child-3"></div>-->
+</div>
+</body>
+</html>
