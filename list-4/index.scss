@@ -1,0 +1,69 @@
+$color:#5ac0ce;
+$text-color:#fff;
+$uiWidth:720px;
+@function pxToRem($px){
+  @return ($px/$uiWidth) / 2 * 1rem;
+}
+html,body{margin:0;padding:0;}
+body{font-family: "Microsoft YaHei UI";background-color: #eef0f4;}
+html{font-size: $uiWidth}
+header{
+  height: pxToRem(88px);
+  line-height: pxToRem(88px);
+  background-color: $color;
+  display: flex;
+  justify-content: space-between;
+  color: $text-color;
+  padding:0  pxToRem(20px);
+  .to-signIn{font-size: 16px;font-weight: 600}
+  a{font-size: 14px;color: $text-color;text-decoration: none}
+
+}
+.user-phone,.user-pwd{height: pxToRem(80px);line-height: pxToRem(80px); margin: pxToRem(20px) 0;background-color: $text-color}
+//.icone,input{display: inline-block}
+.user-phone{
+  display: flex;
+  align-items: center;
+  .icone{
+    height: pxToRem(40px);
+    width: pxToRem(116px);
+    background: url("img/iphone.png") center center no-repeat;
+    background-size: contain;
+    border-right:1px solid #ddd;
+    margin-right: pxToRem(10px);
+  }
+  input{width: 100%;border: none;outline: none;padding-left: pxToRem(20px);}
+
+}
+.user-pwd{
+  display: flex;
+  align-items: center;
+  .icone{
+    height: pxToRem(40px);
+    width: pxToRem(116px);
+    background: url("img/locked-2.png") center center no-repeat;
+    background-size: contain;
+    border-right:1px solid #ddd;
+    margin-right: pxToRem(10px);
+  }
+  input{width: 100%;border: none;outline: none;padding-left: pxToRem(20px);}
+}
+
+button.signIn-btn{height:pxToRem(100px);line-height: pxToRem(100px);font-size: 18px ;color: $text-color;background-color: $color;display: block;width: 100%;letter-spacing: 20px;border: none}
+div.pwd-miss{
+  text-align: end;
+  margin-top: pxToRem(20px);
+  a{color: $color;margin-right: pxToRem(15px);text-decoration: none;font-size: 16px;display:block}
+}
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color:    #aaa;
+}
+input:-moz-placeholder, textarea:-moz-placeholder {
+  color:    #aaa;
+}
+input::-moz-placeholder, textarea::-moz-placeholder {
+  color:     #aaa;
+}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color:     #aaa;
+}
