@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;"/>
+    <title>css可以使用变量的</title>
+    <style>
+        :root{
+            --text-colot:orange;
+            --bg-color:#9da;
+            --widht:200px;
+            --height:200px;
+        }
+        div{
+            width: var(--widht);
+            height:var(--height);
+            background-color: var(--bg-color);
+            color: var(--text-colot);
+        }
+    </style>
+</head>
+<body>
+<div>
+    你好css变量
+</div>
+</body>
+</html>
