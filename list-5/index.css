@@ -7,7 +7,9 @@ li {
 
 body {
   font-family: "Microsoft YaHei UI";
-  margin: 0 auto; }
+  margin: 0 auto; 
+  padding-bottom:2rem;
+}
 
 header {
   height: 1.95556rem;
