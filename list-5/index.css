@@ -1,6 +1,9 @@
-html, body {
+html, body, ul, li {
   margin: 0;
   padding: 0; }
+
+li {
+  list-style: none; }
 
 body {
   font-family: "Microsoft YaHei UI";
@@ -12,11 +15,9 @@ header {
   text-align: center;
   background-color: #5AC0CE; }
   header span {
-    font-size: 32px;
+    font-size: 0.71111rem;
     color: #fff;
     letter-spacing: 0.08889rem; }
-    [data-dpr="2"] header span {
-      font-size: 64px; }
 
 .user-info {
   height: 7.26667rem;
@@ -53,12 +54,10 @@ header {
     .user-info .user-content .user-text {
       color: #fff; }
       .user-info .user-content .user-text .user-name, .user-info .user-content .user-text span {
-        font-size: 32px;
+        font-size: 0.71111rem;
         margin-right: 0.66667rem; }
-        [data-dpr="2"] .user-info .user-content .user-text .user-name, [data-dpr="2"] .user-info .user-content .user-text span {
-          font-size: 64px; }
       .user-info .user-content .user-text .user-address {
-        font-size: 20px;
+        font-size: 0.44444rem;
         padding-left: 0.66667rem;
         background: url("img/addressIcon.png") left 0 no-repeat;
         background-size: contain; }
@@ -80,7 +79,7 @@ header {
     height: 100%;
     border: 0.02222rem solid #5ac0ce;
     color: #5ac0ce;
-    font-size: 32px;
+    font-size: 0.71111rem;
     vertical-align: middle;
     margin-right: 0.55556rem;
     align-items: center;
@@ -95,8 +94,70 @@ header {
     background-color: #5ac0ce;
     width: 6.88889rem;
     height: 100%;
-    font-size: 32px;
+    font-size: 0.71111rem;
     vertical-align: middle;
     border-radius: 0.33333rem; }
+
+.user-do-title {
+  color: #333;
+  padding-left: 0.44444rem;
+  font-size: 0;
+  height: 2.22222rem;
+  line-height: 2.22222rem; }
+  .user-do-title span {
+    border-left: 0.11111rem solid #5ac0ce;
+    padding-left: 0.44444rem;
+    font-size: 0.71111rem; }
+
+.user-power-list {
+  border-top: 0.02222rem solid #e1e5e7;
+  border-bottom: 0.02222rem solid #e1e5e7; }
+  .user-power-list li {
+    display: flex;
+    align-items: center;
+    height: 2.22222rem;
+    line-height: 2.22222rem;
+    font-size: 0;
+    padding-left: 0.44444rem;
+    border-bottom: 0.02222rem solid #e1e5e7;
+    overflow: hidden; }
+    .user-power-list li .home {
+      border-right: 0.02222rem solid #e1e5e7;
+      padding-right: 0.44444rem;
+      color: #999; }
+    .user-power-list li span {
+      font-size: 0.71111rem;
+      color: #333;
+      height: 0.66667rem;
+      line-height: 0.66667rem;
+      margin-right: 0.44444rem; }
+    .user-power-list li span.money {
+      color: #e46060; }
+    .user-power-list li span.user-self {
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      height: 100%;
+      width: 65%;
+      display: -webkit-box;
+      padding: 0.22222rem 0;
+      align-items: center;
+      text-align: justify;
+      text-overflow: ellipsis; }
+  .user-power-list li.user-power-title {
+    height: 2.22222rem;
+    line-height: 2.22222rem;
+    font-size: 0;
+    padding-left: 0.44444rem; }
+    .user-power-list li.user-power-title img {
+      width: 0.88889rem;
+      display: inline-block;
+      margin-right: 0.33333rem; }
+    .user-power-list li.user-power-title span {
+      font-size: 0.71111rem;
+      color: #333;
+      margin-right: 0.44444rem;
+      height: 0.66667rem;
+      line-height: 0.66667rem; }
 
 /*# sourceMappingURL=index.css.map */
