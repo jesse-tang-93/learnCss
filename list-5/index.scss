@@ -20,6 +20,9 @@ header{
   text-align: center;
   background-color: #5AC0CE;
   span{font-size: 32px;
+    [data-dpr="2"] &{
+      font-size: 64px;
+    }
     color: $text-color2;
     letter-spacing: px2rem(4);
   }
@@ -60,7 +63,11 @@ header{
     .user-text{
       color: $text-color2;
       .user-name,span{
-        font-size: 32px;margin-right: px2rem(30);
+        font-size: 32px;
+        [data-dpr="2"] &{
+          font-size: 64px;
+        }
+        margin-right: px2rem(30);
       }
       .user-address{
         font-size: 20px;
