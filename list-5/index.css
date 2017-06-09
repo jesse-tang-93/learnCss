@@ -1,0 +1,98 @@
+html, body {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Microsoft YaHei UI";
+  margin: 0 auto; }
+
+header {
+  height: 1.95556rem;
+  line-height: 1.95556rem;
+  text-align: center;
+  background-color: #5AC0CE; }
+  header span {
+    font-size: 32px;
+    color: #fff;
+    letter-spacing: 0.08889rem; }
+
+.user-info {
+  height: 7.26667rem;
+  position: relative; }
+  .user-info .layout {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    -webkit-filter: blur(6px);
+    /* Chrome, Opera */
+    -moz-filter: blur(6px);
+    -ms-filter: blur(6px);
+    filter: blur(6px);
+    background: url("img/top-banner.png") 0 0 no-repeat;
+    background-size: cover;
+    z-index: -1; }
+  .user-info .user-content {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center; }
+    .user-info .user-content .user-head {
+      width: 3.75556rem;
+      height: 3.75556rem;
+      border-radius: 50%;
+      margin-left: 0.66667rem;
+      margin-right: 1.11111rem;
+      background: url("img/userhead.png") center 0.33333rem no-repeat;
+      background-size: contain;
+      background-color: #efefef; }
+    .user-info .user-content .user-text {
+      color: #fff; }
+      .user-info .user-content .user-text .user-name, .user-info .user-content .user-text span {
+        font-size: 32px;
+        margin-right: 0.66667rem; }
+      .user-info .user-content .user-text .user-address {
+        font-size: 20px;
+        padding-left: 0.66667rem;
+        background: url("img/addressIcon.png") left 0 no-repeat;
+        background-size: contain; }
+
+.tab-nav {
+  position: fixed;
+  bottom: 0.88889rem;
+  right: 0;
+  width: 100%;
+  height: 1.95556rem;
+  text-align: center;
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .tab-nav .message {
+    display: flex;
+    width: 6.88889rem;
+    height: 100%;
+    border: 0.02222rem solid #5ac0ce;
+    color: #5ac0ce;
+    font-size: 32px;
+    vertical-align: middle;
+    margin-right: 0.55556rem;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.33333rem; }
+  .tab-nav .to-tel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border: 0.02222rem solid #5ac0ce;
+    background-color: #5ac0ce;
+    width: 6.88889rem;
+    height: 100%;
+    font-size: 32px;
+    vertical-align: middle;
+    border-radius: 0.33333rem; }
+
+/*# sourceMappingURL=index.css.map */
