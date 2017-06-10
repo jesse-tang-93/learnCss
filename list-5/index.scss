@@ -18,6 +18,7 @@ li{
 body{
   font-family: "Microsoft YaHei UI";
   margin: 0 auto;
+  padding-bottom: px2rem(168);
 }
 header{
   height:px2rem(88);
@@ -69,7 +70,7 @@ header{
         margin-right: px2rem(30);
       }
       .user-address{
-        font-size: px2rem(20);
+        font-size: px2rem(25);
         padding-left: px2rem(30);
         background: url("img/addressIcon.png")left 0 no-repeat;
         background-size: contain;
@@ -100,6 +101,7 @@ header{
       align-items: center;
       justify-content: center;
       border-radius: px2rem(15);
+      background-color: $text-color2;
     }
     .to-tel{
       display: flex;
@@ -154,17 +156,17 @@ header{
     span.money{
       color:#e46060 ;
     }
-    span.user-self{
+    div.user-self{
+      box-sizing: border-box;
+      line-height: normal;
       overflow: hidden;
       -webkit-line-clamp: 2;
       -webkit-box-orient: vertical;
-      height: 100%;
-      width: 65%;
-      display: -webkit-box;    //1.设置display类型为-webkit-box
-      padding: px2rem(10) 0;
+      width: 70%;
+      display: flex;
       align-items: center;
-      text-align: justify;
-      text-overflow:ellipsis;
+      text-overflow: ellipsis;
+      font-size:px2rem(32);
     }
 
   }
